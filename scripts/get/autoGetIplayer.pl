@@ -43,7 +43,8 @@ unless(defined($environment)) { if ($^O =~ /MSWin32/) { $environment = "windows"
 #unless(defined($home))       { $home = "/iplayer"; }
 
 if ( $environment =~ /windows/i ) { 
-    unless(defined($home))  { $home = "C:/iplayer-code"; }
+    unless(defined($code_home))  { $code_home = "C:/git/iplayer-code"; }
+    unless(defined($data_home))  { $data_home = "C:/iplayer"; }
     $playCommand = "get_iplayer.pl"
 } else { 
     $home = "/iplayer"; 
@@ -55,13 +56,13 @@ if ( $environment =~ /windows/i ) {
 unless(defined($winshare))   { $winshare = "C:/iplayer"; }
 unless(defined($share))      { $share = $winshare; }
 
-unless(defined($scripts))    { $scripts = "$home/scripts"; }
-unless(defined($conf))       { $conf    = "$home/config"; }
-unless(defined($logFile))    { $logFile = "$home/autoGetIplayer_${dateTimeStamp}.log"; }
-unless(defined($scriptFile))    { $scriptFile = "$home/batch_autoGetIplayer.bat"; }
+unless(defined($scripts))    { $scripts = "$code_home/scripts"; }
+unless(defined($conf))       { $conf    = "$code_home/config"; }
+unless(defined($logFile))    { $logFile = "$data_home/logs/autoGetIplayer_${dateTimeStamp}.log"; }
+unless(defined($scriptFile))    { $scriptFile = "$data_home/batch_autoGetIplayer.bat"; }
 unless(defined($options))    { $options = ""; }
 
-$force = "true";
+###$force = "true";
 if(defined($force))          { $options = "--force --overwrite --tvmode=best"; }
 if(defined($force))          { $options = "--force --overwrite"; }
 if(defined($force))          { $x=1; }
