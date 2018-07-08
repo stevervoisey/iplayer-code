@@ -1,10 +1,26 @@
+###END-NOW
+b00d8h6r|series,gore vidal
+b0b5xh33|series,will self
+b0b610q8|series,michael frayn playhouse
+b0b6zrkg|series, matt berry interviews
+p068r4sw|series, seriously is that mackine on?
+b0b22h9h|series, short works, suspense
+
+".*will.*self.*"
+
+b02v1q2n|
 ".*Factfulness.*"
-#END-NOW
 b04xxp0g|series, drama - Afternoon drama
 #b04xxp0g|series, drama - Sunday
 b006tnwj|series, drama on three
+b02qtj1z|wilco jon
 
 b02v1q2n|series, dangerous visions
+###b0b2jflw|huxley
+b00sjqty|series,rossitor
+b0b2xs66|series,2001 space oddity
+b006qy2s|series,strange new things
+
 
 ".*book.*omnibus.*"
 "(?!15_Minute).*drama.*"
@@ -17,6 +33,7 @@ b02v1q2n|series, dangerous visions
 #".*book.*at.*bedtime.*omnibus.*"
 ".*hitchhicker.*"
 ".*terry.*pratchett.*"
+".*huxley.*"
 
 ".*Drama.*"
 ".*drama.*"
@@ -43,6 +60,42 @@ b03mz1wb|series, terry pratchett small gods
 #b08jf76q|series, tales from the city
 #b0418jfp|series, dick francis
 #b01r19jd|mark billingham
+b009x12c|series, duel
+b03nj9dh|series,secret history - donna tart
+b0b0s053|series,just kenneth williams
+b06vc0qn|series,hackers and humphrys - yes minister
+b00cjnnk|series,tavener high table
+b00l9pvx|series, scarifiers
+
+b0651411|series, terry alderton
+b03v379k|series, hitch hickers guide galaxy
+b0b22qhr|series,stand up special
+b007zv7f|series, old harrys game
+b09z6205|series,how does that make you feel
+b04gwfym|series,kevin eldon
+p042jdq5|series,funny from the fringe
+b006sf81|series,chanin reaction
+b00ss2yw|series,the idiot
+b0b05253|he said, she said
+b00dn9jp|series,julie enfield
+b06rv3dt|series,dark corners ruth rendel
+p06080gh|series,the unforgiven
+b01nwzmh|series,white heat
+b09qcb01|series,that was then
+b097n5h3|series,reservoir tapes
+b00mbl7z|series,heart of saturday night
+b038p3zt|series,british new wave
+b01pyz0z|series,real george orwell
+b09zgd6y|series,chinese characters
+|series,
+
+b007jq1h|illustration of modern science
+b0b0552b|harry towb
+b0b0552j|dearest squirel
+b05ssp09|enchanted april
+b0b1q039|series,henry james - wings of a dove
+b0b1q0kp|series,play hunger again
+b007jmb2|series,old harrys game
 
 ".*standup.*"
 ".*James.*Acaster.*"
@@ -158,6 +211,9 @@ b03mz1wb|series, terry pratchett small gods
 #".*classic.*serial.*"
 ".*james.*bond.*"
 ".*sherlock.*"
+
+".*harry.*game.*"
+".*brian.*aldis.*"
 
 ".*isy.*suttie.*"
 ".*innes.*"

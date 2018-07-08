@@ -259,7 +259,6 @@ def check_duplicate_album_title():
 
 def check_duplicate_files(move=False, log_size=False):
     log("\n\n")
-    duplicate_folder = "F:\\DUPLICATES\\radio"
     duplicate_instances = 0
     duplicate_files = 0
     different_size_count = 0
@@ -344,7 +343,7 @@ logfile = "duplicates_{}.log".format(date_time_stamp)
 
 out = open(logfile,'w')
 #media_root = "F:\\media\\iplayer\\radio\\current"
-media_root = "C:\\iPlayer"
+media_root = "C:\\xxxiPlayer"
 #pick_root  = "C:\\me\\iPlayer\\iPlayerPick"
 
 xxsearch_list = [ "C:\\iplayer\\radio",
@@ -354,8 +353,10 @@ xxsearch_list = [ "C:\\iplayer\\radio",
                "E:\\me\\media\\VIDEO\\iPlayer",
                "E:\\me\\media\\sound\\Radio"]
 
-search_list = [ "C:\\iplayer\\archive",
+xxsearch_list = [ "C:\\iplayer\\archive",
                 "C:\\me\\iPlayer"]
+duplicate_folder = "C:\\DUPLICATES02\\radio"
+search_list = [ "C:\\iplayer\\archive", "G:\\iplayer\\radio" ]
 
 xsearch_list = [media_root + "\\radio\\current"]
 

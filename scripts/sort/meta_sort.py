@@ -410,11 +410,11 @@ class TagSort(object):
     def add_path(self, path):
         path = re.sub(r'\s+', '_', path.lower())
         # Only add a path that contains drama once.
-        if "drama" in path.lower():
-            if self.add_path_drama:
-                return
-            else:
-                self.add_path_drama = True
+        #if "drama" in path.lower():
+        #    if self.add_path_drama:
+        #        return
+        #    else:
+        #        self.add_path_drama = True
 
         if path not in self.new_path_list:
             self.new_path_list.append(path)
@@ -823,6 +823,8 @@ def move_file(file, destination):
     #shutil.copy(file, destination)
 
 media_root = "C:\\iplayer"
+#media_root = "F:\\sort"
+
 code_root = "C:\\iplayer_code"
 log_root = media_root + "\\logs"
 date_time_stamp = "_" + datetime.now().strftime("%Y-%m-%d-%H%M")
@@ -838,17 +840,20 @@ xxsearch_list = [ "C:\\Users\\steve\\Desktop\\iPlayer Recordings",
                "E:\\me\\media\\VIDEO\\iPlayer",
                "E:\\me\\media\\sound\\Radio"]
 
-xsearch_list = [media_root + "\\radio\\current"]
+xxxx1search_list = [media_root + "\\radio\\current"]
 
-xxxsearch_list = [ "F:\\media\\iplayer\\radio\\current"]
-search_list = [ "C:\\me\\iPlayer"]
+xsearch_list = [media_root + "\\x1archive"]
+
+search_list = [ "G:\\iplayer\\radio" ]
+#search_list = [ "F:\\remainingFromHomeLaptop\\iPlayer"]
+#search_list = [ "C:\\me\\iPlayer"]
 #search_list = ["C:\\me\\iPlayer"]
 
 for location in search_list:
     for root, dirs, files in os.walk(location):
         for file in files:
             # log(os.path.join(root, file))
-            log("\n\n================= {} ================".format(file))
+            log("\n\n================= {} ================\n{}\n".format(file, root))
             if file.endswith(".m4a"):
                 x = TagSort(ext = "m4a", file=file, root=root)
                 #x.build_folder()

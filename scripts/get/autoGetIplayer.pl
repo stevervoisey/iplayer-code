@@ -21,7 +21,9 @@ my $version = "1.00";
 #        output = /iplayer/radio/current
 #        outputradio = /iplayer/radio/current
 #        subdir = 1
-
+#
+#    -radio=radio.list -television=television.list -music=music.list
+#
 ###my $radio = "radio.list";
 
 use Cwd;
@@ -62,8 +64,9 @@ unless(defined($logFile))    { $logFile = "$data_home/logs/autoGetIplayer_${date
 unless(defined($scriptFile))    { $scriptFile = "$data_home/batch_autoGetIplayer.bat"; }
 unless(defined($options))    { $options = ""; }
 
-###$force = "true";
-if(defined($force))          { $options = "--force --overwrite --tvmode=best"; }
+#$force = "true";
+##if(defined($force))          { $options = "--force --overwrite --tvmode=best"; }
+###$force=1;
 if(defined($force))          { $options = "--force --overwrite"; }
 if(defined($force))          { $x=1; }
 
@@ -72,7 +75,7 @@ if(defined($tv))             { unless(defined($television)) { $television = $tv;
 $standardOptions = "--subdir --nopurge";
 $voiceOptions    = "--type=radio --outputradio=${share}/radio/current ${standardOptions}";
 #$musicOptions    = "--type=radio --outputradio=${share}/music/current -radiomode=\"hafstd,hafmed,vgood\" ${standardOptions}";
-$musicOptions    = "--type=radio --outputradio=${share}/music/current -radiomode=best ${standardOptions}";
+$musicOptions    = "--type=radio --outputradio=${share}/music/current --radiomode=best ${standardOptions}";
 $tvOptions       = "--type=tv --outputtv=${share}/television/current ${standardOptions}";
 
 
@@ -145,6 +148,7 @@ sub process {
         if ( $line =~ /^END-NOW$/ ) { last; }
         if ( $line =~ /^\s*$/ ) { next; }
         if ( $line =~ /^#/ )    { next; }
+        if ( $line =~ /^\|/ )    { next; }
         if ( $line =~ /\|/ )    { 
             ( $program, $option ) = $line =~ /^(.*)\|(.*)$/;
         } else {
