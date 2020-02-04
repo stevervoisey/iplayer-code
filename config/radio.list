@@ -1,25 +1,193 @@
+### -radio=radio.list -television=television.list -music=music.list
+m000czhn/series,night_circus
+END-NOW
+m000cm2r/kermode_mayo_2019
+b04xxp0g/series,drama
+b009szrh/series,dr_who
+m000btvz/series,stalingrad
+b009q473/series,poets_tree
+".*Ben.*Moor.*Undone.*"
+".*weird.*tales.*"
+".*theo.*"
+".*night.*circus.*"
+".*weird.*tales.*"
+".*clive.*james.*"
+".*pete.*clive.*"
+".*roy.*clarke.*"
+".*William.*Gibson.*"
+".*omnibus.*"
+".*book.*of.*the.*week.*"
+".*book.*at.*bedtime.*"
+".*Breakfast.*at.*Tiffany.*"
+".*Moulin.*Rouge.*"
+".*rich.*hall.*"
+".*Birth.*of.*a.*Theorem.*"
 ###END-NOW
+m0007wkx/series,proust
+m0007n58/series,stillicide
+b038bf7s/series,fanthorpe-investigations
+".*Peter.*Tinniswood.*"
+".*iannucci.*"
+".*book.*at.*beach.*time.*"
+".*John.*Wyndham.*"
+".*Resnick.*"
+".*planet.*B.*"
+b01pknt0,pacific_dreams
+b00srz5b/series,history_maths
+b00p6qq0/series,planetB
+b0440s05/series,inspector_rensick
+b01214cd/series,bookAtBeachtime
+b04knt4h/series,goodOmens
+b036xc1d/series,bookAtBeach
+b04vf43c/series,goodOmens
+b006qrzz/series,hatch_match
+m0005526/series,suggs_london
+m00065vz/series,i_got_music
+m0005mjj/series,history of hate
+b006tnwj/series,radio_3_drama
+b00g0zlz/series,john mortimer
+m0004fx3/series,night terrace
+b00d56fd/series,the gibson
+b01s3791|music_bridge
+b036w39g|absinthe
+b006qrzz|series,4extra_drama
+b00zfk7g|series,AlanParker
+".*jeremy.*hardy.*"
+".*alan.*parker.*"
+b00czghv|series,The Lost Stradivarius
+m0004624|series
+p0769nbc|series
+b00yjvty|series,alanParkerSimon Munnery
+b04wz7q2|series,warandpeace
+b00t4qk4|magicPeople
+b007k2ph|boothby_6
+b007k2fv|boothby_5
+b007k25t|boothby_4
+b007k1xy|boothby_3
+b007k1pc|boothby_2
+".*europe.*"
+".*alan.*parker.*"
+".*castles.*in.*spain.*"
+b009zfhx
+#b009v0b1|series,boothby series 1
+".*key.*matters.*"
+".*boothby.*"
+".*hegley.*"
+".*comedy.*controllers.*"
+".*war.*peace.*"
+".*the.*wall.*"
+".*rebus.*"
+".*smiley.*"
+".*fall.*of.*the.*shah.*"
+m0003nb7|how_to_burn_1milQuid
+m0000bc7|kenCampbell
+p06jz334|kenCampbell
+m00019lx|kenCampbell_goodRead
+m0003579|terrible_country
+m0002g7h|stw-mind
+m00035w8|FO4_crypto
+m000357l|age_of_denial
+".*pratchett.*"
+b01pnmxg|jonny cash prison
+".*the.*prisoner.*"
+".*John.*Wyndham.*"
+".*key.*matters.*"
+".*Caroline.*Gawn.*"
+".*Colvil.*and.*Soames.*"
+".*comedy.*club.*"
+###END-NOW
+".*absolutely.*radio.*"
+".*James.*Fenimore.*"
+".*conan.*doyle.*"
+".*ustinov.*"
+".*histories.*"
+".*knowing.*steve.*"
+".*loose.*ends.*"
+".*free.*thinking.*"
+".*tumanbay.*"
+".*thought.*cages.*"
+".*doctor.*who.*"
+".*omnibus.*"
+".*purbright.*"
+".*rendell.*"
+".*hood.*"
+".*Joe.*Queenan.*"
+".*kenneth.*williams.*"
+".*faustus.*"
+".*relativity.*"
+b086kp8n|sedaris
+###b00hg8dq|
+b09r37tz,Brief History
+###END-NOW
+".*online.*culture.*war.*"
+".*others.*see.*us.*"
+".*the.*leopard.*"
+".*john.*cooper.*"
+".*review.*of.*year.*"
+".*Correspondents.*Look.*Ahead.*"
+#".*.*.*.*.*"
+m0001t14|best of year
+#m0001tbn|loose_ends_year_music
+".*MR.*james.*"
+".*rick.*mayall.*"
+".*amsterdam.*.*"
+###".*.*.*"
+".*on.*truth.*"
+".*once.*future.*king.*"
+".*ian.*rankin.*"
+".*short.*stories.*"
+".*short.*story.*"
+".*short.*cut.*"
+".*short.*work.*"
+".*strangelove.*"
+".*earthsea.*"
+".*charles.*paris.*"
+".*subterranean.*homesick.*"
+".*crackwalker.*"
+".*lehman.*"
+".*wake.*the.*dead.*"
+".*emerald.*city.*"
+".*news.*from.*nowhere.*"
+".*unforgiven.*"
+".*that.*was.*then.*"
+".*heart.*saturday.*night.*"
+".*betrayal.*"
+b048l0gc|hegley
+b00mpnkr
+b00mj5rt
+b03b37mt|series,hegley
+b061v8x4|magic
+b04krx67|series, once and future king
+b04xxp0g|series, drama
+b0b9tsjw|series, ?
 b00d8h6r|series,gore vidal
 b0b5xh33|series,will self
 b0b610q8|series,michael frayn playhouse
 b0b6zrkg|series, matt berry interviews
 p068r4sw|series, seriously is that mackine on?
 b0b22h9h|series, short works, suspense
-
+b0b7r2k6|series,book of week
+b006qtlx|series,book at bed
+b0b9w2lh|series,reality science
+".*new.*age.*capitalism.*"
 ".*will.*self.*"
-
+".*top.*girls.*"
+".*Algernon.*Blackwood.*"
+".*Trueman.*Riley.*"
+".*beats.*to.*the.*bar.*"
+".*jaws.*"
 b02v1q2n|
 ".*Factfulness.*"
 b04xxp0g|series, drama - Afternoon drama
 #b04xxp0g|series, drama - Sunday
 b006tnwj|series, drama on three
 b02qtj1z|wilco jon
-
 b02v1q2n|series, dangerous visions
 ###b0b2jflw|huxley
 b00sjqty|series,rossitor
 b0b2xs66|series,2001 space oddity
 b006qy2s|series,strange new things
+
 
 
 ".*book.*omnibus.*"
@@ -29,8 +197,7 @@ b006qy2s|series,strange new things
 
 "Letters.*to.*the.*Arab.*World.*Omnibus"
 
-#".*book.*of.*the.*week.*omnibus.*"
-#".*book.*at.*bedtime.*omnibus.*"
+
 ".*hitchhicker.*"
 ".*terry.*pratchett.*"
 ".*huxley.*"
@@ -206,8 +373,8 @@ b007jmb2|series,old harrys game
 
 "Letters.*to.*the.*Arab.*World.*Omnibus"
 
-#".*book.*of.*the.*week.*omnibus.*"
-#".*book.*at.*bedtime.*omnibus.*"
+".*book.*of.*the.*week.*omnibus.*"
+".*book.*at.*bedtime.*omnibus.*"
 #".*classic.*serial.*"
 ".*james.*bond.*"
 ".*sherlock.*"
@@ -245,8 +412,8 @@ b007jmb2|series,old harrys game
 ".*wicca.*.*.*"
 
 ".*orbit.*.*.*"
-".*kermode.*film.*review.*"
-".*the.*film.*program.*"
+
+###".*the.*film.*program.*"
 
 
 
@@ -273,7 +440,7 @@ b007jmb2|series,old harrys game
 
 ".*oneira.*.*.*"
 
-".*spy.*.*.*"
+####".*spy.*.*.*"
 
 ".*ben.*moor.*.*"
 
@@ -308,7 +475,7 @@ b007jmb2|series,old harrys game
 
 ".*maigret.*" 
 
-".*tracks.*" 
+###".*tracks.*"
  
 ".*richard.*pryor.*" 
 

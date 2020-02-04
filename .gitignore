@@ -5,3 +5,4 @@ scripts/sort/find_duplicate_ORIGINAL.py
 config/OLD_television.list
 config/OLD_radio.list
 config/force.list
+venv

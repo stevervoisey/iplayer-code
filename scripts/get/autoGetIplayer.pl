@@ -5,7 +5,8 @@ my $version = "1.00";
 # Created by Steve Voisey (srv) 15 Feb 2018.
 # email: [stevevoisey@yahoo.com]
 # 
-
+# C:\Users\steve\.get_iplayer\download_history
+#
 # --outputtv 
 #    get_iplayer --prefs-add --subdir --outputradio="/iplayer/radio/current"  --radiomode="hafstd,hafmed,vgood"
 #    get_iplayer --prefs-add --subdir --outputtv="/iplayer/television/current"
@@ -26,6 +27,8 @@ my $version = "1.00";
 #
 ###my $radio = "radio.list";
 
+#use strict;
+#use warnings;
 use Cwd;
 
 my $divide = "=" x 80 . "\n";
@@ -45,17 +48,19 @@ unless(defined($environment)) { if ($^O =~ /MSWin32/) { $environment = "windows"
 #unless(defined($home))       { $home = "/iplayer"; }
 
 if ( $environment =~ /windows/i ) { 
-    unless(defined($code_home))  { $code_home = "C:/git/iplayer-code"; }
-    unless(defined($data_home))  { $data_home = "C:/iplayer"; }
+    # unless(defined($code_home))  { $code_home = "C:/git/iplayer-code"; }
+    unless(defined($code_home))  { $code_home = "D:/ME/Development/git/pycharm/iplayer-code"; }
+    unless(defined($data_home))  { $data_home = "D:/iplayer"; }
+    unless(defined($profile_home))  { $profile_home = "D:\iplayer\profile-dir"; }
     $playCommand = "get_iplayer.pl"
 } else { 
-    $home = "/iplayer"; 
+    #$home = "/iplayer";
     $share = "/iplayer"; 
     $playCommand = "get_iplayer"
 }
 
   
-unless(defined($winshare))   { $winshare = "C:/iplayer"; }
+unless(defined($winshare))   { $winshare = "D:/iplayer"; }
 unless(defined($share))      { $share = $winshare; }
 
 unless(defined($scripts))    { $scripts = "$code_home/scripts"; }
@@ -68,7 +73,7 @@ unless(defined($options))    { $options = ""; }
 ##if(defined($force))          { $options = "--force --overwrite --tvmode=best"; }
 ###$force=1;
 if(defined($force))          { $options = "--force --overwrite"; }
-if(defined($force))          { $x=1; }
+#if(defined($force))          { $x=1; }
 
 if(defined($tv))             { unless(defined($television)) { $television = $tv; }}
 
@@ -76,7 +81,7 @@ $standardOptions = "--subdir --nopurge";
 $voiceOptions    = "--type=radio --outputradio=${share}/radio/current ${standardOptions}";
 #$musicOptions    = "--type=radio --outputradio=${share}/music/current -radiomode=\"hafstd,hafmed,vgood\" ${standardOptions}";
 $musicOptions    = "--type=radio --outputradio=${share}/music/current --radiomode=best ${standardOptions}";
-$tvOptions       = "--type=tv --outputtv=${share}/television/current ${standardOptions}";
+$tvOptions       = "--type=tv --outputtv=${share}/television/current ${standardOptions} --ffmpeg-force";
 
 
 
@@ -136,21 +141,23 @@ sub process {
     my $array_ref = $_[0];
     my $type      = $_[1];
     unless(defined($type)) { $type = "radio"; }
-    
-    $count = 0;
+    my $command = "NONE";
+    my $count = 0;
+    my $out = "";
     foreach $line (@$array_ref) {
         $count++;
         $command = "NONE";
-        ( $option, $program ) = "";
+        ($option, $program) = "";
         chomp($line);
         $line =~ s/\R\z//;
 
-        if ( $line =~ /^END-NOW$/ ) { last; }
-        if ( $line =~ /^\s*$/ ) { next; }
-        if ( $line =~ /^#/ )    { next; }
-        if ( $line =~ /^\|/ )    { next; }
-        if ( $line =~ /\|/ )    { 
-            ( $program, $option ) = $line =~ /^(.*)\|(.*)$/;
+        if ($line =~ /^END-NOW$/) {last;}
+        if ($line =~ /^\s*$/) {next;}
+        if ($line =~ /^#/) {next;}
+        if ($line =~ /^\|/) {next;}
+        if ( $line =~ /\|/ || $line =~ /\// )    {
+        #if ( $line =~ /\|/ )     {
+            ( $program, $option ) = $line =~ /^(.*)[\|\/](.*)$/;
         } else {
             $program = $line;
         }
@@ -185,9 +192,10 @@ sub process {
 
         unless ( $command =~ /NONE/ ) {
             print "command: $command\n";
-            $out = `$command`;
-            #system($command);
-            print "out: $out\n";
+            $out = "";
+            ####$out = `$command`;
+            system($command);
+            ###print "out: $out\n";
             print OUT "$command\n$out\n";
             ##perl.exe  "%IPLAY_DIR%"/get_iplayer.pl
             ##print OUT "$command\n";
