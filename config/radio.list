@@ -1,6 +1,12 @@
-### -radio=radio.list -television=television.list -music=music.list
+### -radio=radio.list -tv=tv.list -music=music.list
 m000czhn/series,night_circus
+###".*History.*of.*the.*Infinite.*"
+b084d0t7/series,infinite_omnibus_01
+b084dsk7/series,infinite_omnibus_02
+".*Conversations.*from.*a.*Long.*Marriage.*"
 END-NOW
+
+
 m000cm2r/kermode_mayo_2019
 b04xxp0g/series,drama
 b009szrh/series,dr_who
@@ -102,7 +108,7 @@ b01pnmxg|jonny cash prison
 ".*ustinov.*"
 ".*histories.*"
 ".*knowing.*steve.*"
-".*loose.*ends.*"
+###".*loose.*ends.*"
 ".*free.*thinking.*"
 ".*tumanbay.*"
 ".*thought.*cages.*"
@@ -254,7 +260,6 @@ b00mbl7z|series,heart of saturday night
 b038p3zt|series,british new wave
 b01pyz0z|series,real george orwell
 b09zgd6y|series,chinese characters
-|series,
 
 b007jq1h|illustration of modern science
 b0b0552b|harry towb
@@ -330,13 +335,13 @@ b007jmb2|series,old harrys game
 ".*Wally.*Daly.*"
 ".*Henri.*Castang.*"
 ".*History.*Brain.*"
-".*in.*the.*end.*"
-".*news.*quiz.*extra.*"
+###".*in.*the.*end.*"
+###".*news.*quiz.*extra.*"
 ".*mark.*watson.*"
 ".*dangerous.*visions.*"
 ".*secret.*world.*"
 ".*league.*against.*tedium.*"
-#   ".*poetry.*puh-lease.*"
+".*poetry.*puh-lease.*"
 ".*foreign.*bodies.*"
 
 ".*william.*gibson.*"
